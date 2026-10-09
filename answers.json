@@ -1,0 +1,912 @@
+{
+  "generator": "extractive",
+  "answers": [
+    {
+      "question_id": "q01",
+      "question": "How many password reset attempts are allowed per hour?",
+      "answer": "Each account may make up to 5 password reset attempts per hour. [authentication_password_reset#password-reset-limits-0] Additional reset requests within the same hour are rejected with the message \"Too many reset attempts\", and the counter clears 60 minutes after the first attempt in the window. [authentication_password_reset#password-reset-limits-0]",
+      "citations": [
+        "authentication_password_reset.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "authentication_password_reset#password-reset-limits-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "authentication_password_reset#password-reset-limits-0",
+        "authentication_password_reset#failed-sign-in-lockout-0",
+        "authentication_password_reset#overview-0",
+        "authentication_password_reset#resetting-your-password-0"
+      ],
+      "retrieved_doc_ids": [
+        "authentication_password_reset.md"
+      ],
+      "context_source_ids": [
+        "authentication_password_reset#password-reset-limits-0",
+        "authentication_password_reset#failed-sign-in-lockout-0",
+        "authentication_password_reset#overview-0",
+        "authentication_password_reset#resetting-your-password-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "authentication_password_reset#password-reset-limits-0",
+          "doc_id": "authentication_password_reset.md",
+          "text": "Each account may make up to 5 password reset attempts per hour."
+        },
+        {
+          "chunk_id": "authentication_password_reset#password-reset-limits-0",
+          "doc_id": "authentication_password_reset.md",
+          "text": "Additional reset requests within the same hour are rejected with the message \"Too many reset attempts\", and the counter clears 60 minutes after the first attempt in the window."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "password",
+          "reset",
+          "attempts",
+          "hour"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "authentication_password_reset.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 1.0,
+        "best_chunk_coverage": 1.0,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "password",
+          "reset",
+          "attempts",
+          "hour"
+        ],
+        "lexicon_matches": {}
+      }
+    },
+    {
+      "question_id": "q02",
+      "question": "What happens when a client exceeds the API rate limit?",
+      "answer": "When a client exceeds the rate limit, the API returns HTTP 429 Too Many Requests with a Retry-After header giving the number of seconds to wait. [api_rate_limits#exceeding-the-limit-0] Clients should retry with exponential backoff, starting at 1 second and capped at 60 seconds. [api_rate_limits#exceeding-the-limit-0]",
+      "citations": [
+        "api_rate_limits.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "api_rate_limits#exceeding-the-limit-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "api_rate_limits#exceeding-the-limit-0",
+        "api_rate_limits#rate-limit-headers-0",
+        "api_rate_limits#requesting-a-higher-limit-0",
+        "api_rate_limits#overview-0"
+      ],
+      "retrieved_doc_ids": [
+        "api_rate_limits.md"
+      ],
+      "context_source_ids": [
+        "api_rate_limits#exceeding-the-limit-0",
+        "api_rate_limits#rate-limit-headers-0",
+        "api_rate_limits#requesting-a-higher-limit-0",
+        "api_rate_limits#overview-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "api_rate_limits#exceeding-the-limit-0",
+          "doc_id": "api_rate_limits.md",
+          "text": "When a client exceeds the rate limit, the API returns HTTP 429 Too Many Requests with a Retry-After header giving the number of seconds to wait."
+        },
+        {
+          "chunk_id": "api_rate_limits#exceeding-the-limit-0",
+          "doc_id": "api_rate_limits.md",
+          "text": "Clients should retry with exponential backoff, starting at 1 second and capped at 60 seconds."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "client",
+          "exceeds",
+          "api",
+          "rate",
+          "limit"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "api_rate_limits.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 1.0,
+        "best_chunk_coverage": 1.0,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "client",
+          "exceeds",
+          "api",
+          "rate",
+          "limit"
+        ],
+        "lexicon_matches": {}
+      }
+    },
+    {
+      "question_id": "q03",
+      "question": "Which documents are accepted as proof of address?",
+      "answer": "Proof of address: a utility bill, bank statement, or government-issued letter showing the customer's full name and residential address, dated within the last 6 months. [identity_verification#accepted-documents-0] Mobile phone bills and screenshots are not accepted as proof of address. [identity_verification#accepted-documents-0]",
+      "citations": [
+        "identity_verification.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "identity_verification#accepted-documents-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "identity_verification#accepted-documents-0",
+        "identity_verification#submitting-documents-0",
+        "authentication_password_reset#lost-access-to-the-registered-email-0",
+        "authentication_password_reset#resetting-your-password-0"
+      ],
+      "retrieved_doc_ids": [
+        "identity_verification.md",
+        "authentication_password_reset.md"
+      ],
+      "context_source_ids": [
+        "identity_verification#accepted-documents-0",
+        "identity_verification#submitting-documents-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "identity_verification#accepted-documents-0",
+          "doc_id": "identity_verification.md",
+          "text": "Proof of address: a utility bill, bank statement, or government-issued letter showing the customer's full name and residential address, dated within the last 6 months."
+        },
+        {
+          "chunk_id": "identity_verification#accepted-documents-0",
+          "doc_id": "identity_verification.md",
+          "text": "Mobile phone bills and screenshots are not accepted as proof of address."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "documents",
+          "accepted",
+          "proof",
+          "address"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "identity_verification.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.8846,
+        "best_chunk_coverage": 1.0,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "accepted",
+          "proof",
+          "address"
+        ],
+        "lexicon_matches": {}
+      }
+    },
+    {
+      "question_id": "q04",
+      "question": "How long do bank transfer withdrawals take to arrive?",
+      "answer": "Method: Bank transfer; Internal processing: 1 business day; Typical arrival: 3-5 business days. [payments_withdrawals#processing-times-0]",
+      "citations": [
+        "payments_withdrawals.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "payments_withdrawals#processing-times-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "payments_withdrawals#processing-times-0",
+        "payments_withdrawals#withdrawal-rules-0",
+        "payments_withdrawals#supported-payment-methods-0",
+        "payments_withdrawals#pending-and-failed-withdrawals-0"
+      ],
+      "retrieved_doc_ids": [
+        "payments_withdrawals.md"
+      ],
+      "context_source_ids": [
+        "payments_withdrawals#processing-times-0",
+        "payments_withdrawals#withdrawal-rules-0",
+        "payments_withdrawals#supported-payment-methods-0",
+        "payments_withdrawals#pending-and-failed-withdrawals-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "payments_withdrawals#processing-times-0",
+          "doc_id": "payments_withdrawals.md",
+          "text": "Method: Bank transfer; Internal processing: 1 business day; Typical arrival: 3-5 business days."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "bank",
+          "transfer",
+          "withdrawals",
+          "arrive"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "payments_withdrawals.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.8983,
+        "best_chunk_coverage": 1.0,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "bank",
+          "transfer",
+          "arrive"
+        ],
+        "lexicon_matches": {}
+      }
+    },
+    {
+      "question_id": "q05",
+      "question": "Who is a SEV1 incident escalated to if it is not resolved within 30 minutes?",
+      "answer": "If a SEV1 incident is not resolved within 30 minutes, the on-call engineer escalates it to the Engineering Manager. [incident_escalation#escalation-path-0]",
+      "citations": [
+        "incident_escalation.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "incident_escalation#escalation-path-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "incident_escalation#escalation-path-0",
+        "incident_escalation#customer-communication-0",
+        "authentication_password_reset#failed-sign-in-lockout-0",
+        "incident_escalation#post-incident-review-0"
+      ],
+      "retrieved_doc_ids": [
+        "incident_escalation.md",
+        "authentication_password_reset.md"
+      ],
+      "context_source_ids": [
+        "incident_escalation#escalation-path-0",
+        "incident_escalation#customer-communication-0",
+        "authentication_password_reset#failed-sign-in-lockout-0",
+        "incident_escalation#post-incident-review-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "incident_escalation#escalation-path-0",
+          "doc_id": "incident_escalation.md",
+          "text": "If a SEV1 incident is not resolved within 30 minutes, the on-call engineer escalates it to the Engineering Manager."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "sev1",
+          "incident",
+          "escalated",
+          "resolved",
+          "within",
+          "30",
+          "minutes"
+        ],
+        "exact_terms": [
+          "sev1",
+          "30"
+        ],
+        "related_sources": [
+          "authentication_password_reset.md",
+          "incident_escalation.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 1.0,
+        "best_chunk_coverage": 1.0,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "sev1",
+          "incident",
+          "escalated",
+          "resolved",
+          "within",
+          "30",
+          "minutes"
+        ],
+        "lexicon_matches": {}
+      }
+    },
+    {
+      "question_id": "q06",
+      "question": "How long does identity verification review usually take?",
+      "answer": "Most verification submissions are reviewed within 24 hours. [identity_verification#review-times-0] During peak periods the review can take up to 3 business days. [identity_verification#review-times-0]",
+      "citations": [
+        "identity_verification.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "identity_verification#review-times-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "identity_verification#review-times-0",
+        "identity_verification#overview-0",
+        "identity_verification#rejected-submissions-0",
+        "identity_verification#data-retention-0"
+      ],
+      "retrieved_doc_ids": [
+        "identity_verification.md"
+      ],
+      "context_source_ids": [
+        "identity_verification#review-times-0",
+        "identity_verification#overview-0",
+        "identity_verification#rejected-submissions-0",
+        "identity_verification#data-retention-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "identity_verification#review-times-0",
+          "doc_id": "identity_verification.md",
+          "text": "Most verification submissions are reviewed within 24 hours."
+        },
+        {
+          "chunk_id": "identity_verification#review-times-0",
+          "doc_id": "identity_verification.md",
+          "text": "During peak periods the review can take up to 3 business days."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "identity",
+          "verification",
+          "review"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "identity_verification.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.8464,
+        "best_chunk_coverage": 1.0,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "verification",
+          "review"
+        ],
+        "lexicon_matches": {}
+      }
+    },
+    {
+      "question_id": "q07",
+      "question": "Can I submit a mobile phone bill as proof of address?",
+      "answer": "Mobile phone bills and screenshots are not accepted as proof of address. [identity_verification#accepted-documents-0]",
+      "citations": [
+        "identity_verification.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "identity_verification#accepted-documents-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "identity_verification#accepted-documents-0",
+        "identity_verification#submitting-documents-0",
+        "identity_verification#rejected-submissions-0",
+        "identity_verification#review-times-0"
+      ],
+      "retrieved_doc_ids": [
+        "identity_verification.md"
+      ],
+      "context_source_ids": [
+        "identity_verification#accepted-documents-0",
+        "identity_verification#submitting-documents-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "identity_verification#accepted-documents-0",
+          "doc_id": "identity_verification.md",
+          "text": "Mobile phone bills and screenshots are not accepted as proof of address."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "submit",
+          "mobile",
+          "phone",
+          "bill",
+          "proof",
+          "address"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "identity_verification.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.9643,
+        "best_chunk_coverage": 0.9643,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "submit",
+          "mobile",
+          "phone",
+          "bill",
+          "proof",
+          "address"
+        ],
+        "lexicon_matches": {
+          "submit": "accepted"
+        }
+      }
+    },
+    {
+      "question_id": "q08",
+      "question": "Is two-factor authentication optional for API accounts?",
+      "answer": "Two-factor authentication (2FA) is strongly recommended and is mandatory for accounts with API access. [authentication_password_reset#overview-0]",
+      "citations": [
+        "authentication_password_reset.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "authentication_password_reset#overview-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "authentication_password_reset#overview-0",
+        "authentication_password_reset#two-factor-authentication-0",
+        "payments_withdrawals#overview-0",
+        "api_rate_limits#overview-0"
+      ],
+      "retrieved_doc_ids": [
+        "authentication_password_reset.md",
+        "payments_withdrawals.md",
+        "api_rate_limits.md"
+      ],
+      "context_source_ids": [
+        "authentication_password_reset#overview-0",
+        "authentication_password_reset#two-factor-authentication-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "authentication_password_reset#overview-0",
+          "doc_id": "authentication_password_reset.md",
+          "text": "Two-factor authentication (2FA) is strongly recommended and is mandatory for accounts with API access."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "two",
+          "factor",
+          "authentication",
+          "optional",
+          "api",
+          "accounts"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "authentication_password_reset.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.959,
+        "best_chunk_coverage": 0.959,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "two",
+          "factor",
+          "authentication",
+          "optional",
+          "api",
+          "accounts"
+        ],
+        "lexicon_matches": {
+          "optional": "mandatory"
+        }
+      }
+    },
+    {
+      "question_id": "q09",
+      "question": "Is my second withdrawal in a month free?",
+      "answer": "The first withdrawal in each calendar month is free; each additional withdrawal in the same month costs 2.50 USD. [payments_withdrawals#fees-0]",
+      "citations": [
+        "payments_withdrawals.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "payments_withdrawals#fees-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "payments_withdrawals#fees-0",
+        "payments_withdrawals#overview-0",
+        "payments_withdrawals#pending-and-failed-withdrawals-0",
+        "payments_withdrawals#withdrawal-rules-0"
+      ],
+      "retrieved_doc_ids": [
+        "payments_withdrawals.md"
+      ],
+      "context_source_ids": [
+        "payments_withdrawals#fees-0",
+        "payments_withdrawals#overview-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "payments_withdrawals#fees-0",
+          "doc_id": "payments_withdrawals.md",
+          "text": "The first withdrawal in each calendar month is free; each additional withdrawal in the same month costs 2.50 USD."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "second",
+          "withdrawal",
+          "month",
+          "free"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "payments_withdrawals.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.9504,
+        "best_chunk_coverage": 0.9504,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "second",
+          "withdrawal",
+          "month",
+          "free"
+        ],
+        "lexicon_matches": {
+          "second": "additional"
+        }
+      }
+    },
+    {
+      "question_id": "q10",
+      "question": "How long are verification documents kept after an account is closed?",
+      "answer": "Verification documents are stored encrypted and are retained for 5 years after the account is closed, as required by AML record-keeping rules. [identity_verification#data-retention-0]",
+      "citations": [
+        "identity_verification.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "identity_verification#data-retention-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "identity_verification#data-retention-0",
+        "identity_verification#submitting-documents-0",
+        "identity_verification#rejected-submissions-0",
+        "identity_verification#accepted-documents-0"
+      ],
+      "retrieved_doc_ids": [
+        "identity_verification.md"
+      ],
+      "context_source_ids": [
+        "identity_verification#data-retention-0",
+        "identity_verification#submitting-documents-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "identity_verification#data-retention-0",
+          "doc_id": "identity_verification.md",
+          "text": "Verification documents are stored encrypted and are retained for 5 years after the account is closed, as required by AML record-keeping rules."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "verification",
+          "documents",
+          "kept",
+          "account",
+          "closed"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "identity_verification.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.9489,
+        "best_chunk_coverage": 0.9489,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "verification",
+          "documents",
+          "kept",
+          "account",
+          "closed"
+        ],
+        "lexicon_matches": {
+          "kept": "retained"
+        }
+      }
+    },
+    {
+      "question_id": "q11",
+      "question": "How often is the status page updated during a SEV2 incident?",
+      "answer": "During a SEV2 incident it is updated every 2 hours. [incident_escalation#customer-communication-0] Agents must use the approved status page wording and must not give customers an estimated fix time unless the incident commander has confirmed it. [incident_escalation#customer-communication-0]",
+      "citations": [
+        "incident_escalation.md"
+      ],
+      "supported": true,
+      "chunk_citations": [
+        "incident_escalation#customer-communication-0"
+      ],
+      "refusal_reason": null,
+      "retrieved_source_ids": [
+        "incident_escalation#customer-communication-0",
+        "incident_escalation#post-incident-review-0",
+        "incident_escalation#how-to-escalate-0",
+        "incident_escalation#escalation-path-0"
+      ],
+      "retrieved_doc_ids": [
+        "incident_escalation.md"
+      ],
+      "context_source_ids": [
+        "incident_escalation#customer-communication-0",
+        "incident_escalation#post-incident-review-0",
+        "incident_escalation#how-to-escalate-0"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "incident_escalation#customer-communication-0",
+          "doc_id": "incident_escalation.md",
+          "text": "During a SEV2 incident it is updated every 2 hours."
+        },
+        {
+          "chunk_id": "incident_escalation#customer-communication-0",
+          "doc_id": "incident_escalation.md",
+          "text": "Agents must use the approved status page wording and must not give customers an estimated fix time unless the incident commander has confirmed it."
+        }
+      ],
+      "diagnostics": {
+        "question_terms": [
+          "status",
+          "page",
+          "updated",
+          "sev2",
+          "incident"
+        ],
+        "exact_terms": [
+          "sev2"
+        ],
+        "related_sources": [
+          "incident_escalation.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 1.0,
+        "best_chunk_coverage": 1.0,
+        "terms_missing_from_best_chunk": [],
+        "best_window_matched_terms": [
+          "status",
+          "page",
+          "updated",
+          "sev2",
+          "incident"
+        ],
+        "lexicon_matches": {}
+      }
+    },
+    {
+      "question_id": "q12",
+      "question": "What is the API rate limit for the Enterprise plan?",
+      "answer": "I don't have enough information in the provided documents to answer this question. The documents do not mention: enterprise.",
+      "citations": [],
+      "supported": false,
+      "chunk_citations": [],
+      "refusal_reason": "unknown_terms",
+      "retrieved_source_ids": [
+        "api_rate_limits#requesting-a-higher-limit-0",
+        "api_rate_limits#rate-limit-headers-0",
+        "api_rate_limits#exceeding-the-limit-0",
+        "api_rate_limits#limits-by-plan-0"
+      ],
+      "retrieved_doc_ids": [
+        "api_rate_limits.md"
+      ],
+      "context_source_ids": [
+        "api_rate_limits#requesting-a-higher-limit-0",
+        "api_rate_limits#rate-limit-headers-0",
+        "api_rate_limits#exceeding-the-limit-0",
+        "api_rate_limits#limits-by-plan-0"
+      ],
+      "evidence": [],
+      "diagnostics": {
+        "question_terms": [
+          "api",
+          "rate",
+          "limit",
+          "enterprise",
+          "plan"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "api_rate_limits.md"
+        ],
+        "unknown_terms": [
+          "enterprise"
+        ]
+      }
+    },
+    {
+      "question_id": "q13",
+      "question": "Can I withdraw funds to a cryptocurrency wallet, and what network fees apply?",
+      "answer": "I don't have enough information in the provided documents to answer this question. The documents do not mention: cryptocurrency, network.",
+      "citations": [],
+      "supported": false,
+      "chunk_citations": [],
+      "refusal_reason": "unknown_terms",
+      "retrieved_source_ids": [
+        "payments_withdrawals#withdrawal-rules-0",
+        "payments_withdrawals#overview-0",
+        "api_rate_limits#endpoint-specific-limits-0",
+        "payments_withdrawals#fees-0"
+      ],
+      "retrieved_doc_ids": [
+        "payments_withdrawals.md",
+        "api_rate_limits.md"
+      ],
+      "context_source_ids": [
+        "payments_withdrawals#withdrawal-rules-0"
+      ],
+      "evidence": [],
+      "diagnostics": {
+        "question_terms": [
+          "withdraw",
+          "funds",
+          "cryptocurrency",
+          "wallet",
+          "network",
+          "fees",
+          "apply"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "payments_withdrawals.md"
+        ],
+        "unknown_terms": [
+          "cryptocurrency",
+          "network"
+        ]
+      }
+    },
+    {
+      "question_id": "q14",
+      "question": "What compensation do customers receive after a SEV1 outage?",
+      "answer": "I don't have enough information in the provided documents to answer this question. The documents do not mention: compensation.",
+      "citations": [],
+      "supported": false,
+      "chunk_citations": [],
+      "refusal_reason": "unknown_terms",
+      "retrieved_source_ids": [
+        "identity_verification#review-times-0",
+        "authentication_password_reset#two-factor-authentication-0",
+        "incident_escalation#severity-levels-0",
+        "incident_escalation#customer-communication-0"
+      ],
+      "retrieved_doc_ids": [
+        "identity_verification.md",
+        "authentication_password_reset.md",
+        "incident_escalation.md"
+      ],
+      "context_source_ids": [
+        "identity_verification#review-times-0",
+        "authentication_password_reset#two-factor-authentication-0",
+        "incident_escalation#severity-levels-0"
+      ],
+      "evidence": [],
+      "diagnostics": {
+        "question_terms": [
+          "compensation",
+          "customers",
+          "receive",
+          "sev1",
+          "outage"
+        ],
+        "exact_terms": [
+          "sev1"
+        ],
+        "related_sources": [
+          "authentication_password_reset.md",
+          "identity_verification.md",
+          "incident_escalation.md"
+        ],
+        "unknown_terms": [
+          "compensation"
+        ]
+      }
+    },
+    {
+      "question_id": "q15",
+      "question": "What are the opening hours of the London office?",
+      "answer": "I don't have enough information in the provided documents to answer this question. The documents do not mention: london, office.",
+      "citations": [],
+      "supported": false,
+      "chunk_citations": [],
+      "refusal_reason": "unknown_terms",
+      "retrieved_source_ids": [
+        "incident_escalation#how-to-escalate-0",
+        "authentication_password_reset#resetting-your-password-0",
+        "identity_verification#review-times-0",
+        "authentication_password_reset#failed-sign-in-lockout-0"
+      ],
+      "retrieved_doc_ids": [
+        "incident_escalation.md",
+        "authentication_password_reset.md",
+        "identity_verification.md"
+      ],
+      "context_source_ids": [
+        "incident_escalation#how-to-escalate-0",
+        "authentication_password_reset#resetting-your-password-0"
+      ],
+      "evidence": [],
+      "diagnostics": {
+        "question_terms": [
+          "opening",
+          "hours",
+          "london",
+          "office"
+        ],
+        "exact_terms": [],
+        "related_sources": [
+          "authentication_password_reset.md",
+          "incident_escalation.md"
+        ],
+        "unknown_terms": [
+          "london",
+          "office"
+        ]
+      }
+    },
+    {
+      "question_id": "q16",
+      "question": "How often is the status page updated during a SEV3 incident?",
+      "answer": "I don't have enough information in the provided documents to answer this question. The closest passage does not cover: status, updated.",
+      "citations": [],
+      "supported": false,
+      "chunk_citations": [],
+      "refusal_reason": "insufficient_coverage",
+      "retrieved_source_ids": [
+        "incident_escalation#customer-communication-0",
+        "incident_escalation#how-to-escalate-0",
+        "payments_withdrawals#pending-and-failed-withdrawals-0",
+        "incident_escalation#overview-0"
+      ],
+      "retrieved_doc_ids": [
+        "incident_escalation.md",
+        "payments_withdrawals.md"
+      ],
+      "context_source_ids": [
+        "incident_escalation#customer-communication-0",
+        "incident_escalation#how-to-escalate-0"
+      ],
+      "evidence": [],
+      "diagnostics": {
+        "question_terms": [
+          "status",
+          "page",
+          "updated",
+          "sev3",
+          "incident"
+        ],
+        "exact_terms": [
+          "sev3"
+        ],
+        "related_sources": [
+          "incident_escalation.md"
+        ],
+        "unknown_terms": [],
+        "best_unit_score": 0.3543,
+        "best_chunk_coverage": 0.5613,
+        "terms_missing_from_best_chunk": [
+          "status",
+          "updated"
+        ],
+        "best_window_matched_terms": [
+          "sev3",
+          "incident"
+        ],
+        "lexicon_matches": {}
+      }
+    }
+  ]
+}

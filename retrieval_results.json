@@ -1,0 +1,746 @@
+{
+  "corpus": {
+    "documents": 5,
+    "chunks": 32
+  },
+  "settings": {
+    "top_k": 4,
+    "min_retrieval_score": 0.08
+  },
+  "results": [
+    {
+      "question_id": "q01",
+      "question": "How many password reset attempts are allowed per hour?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#password-reset-limits-0",
+          "score": 0.4963,
+          "text": "Each account may make up to 5 password reset attempts per hour. Additional reset requests within the same hour are rejected with the message \"Too many reset attempts\", and the counter clears 60 minutes after the first attempt in the window. Support agents cannot override this limit.",
+          "section": "Authentication and Password Reset > Password reset limits",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#failed-sign-in-lockout-0",
+          "score": 0.2087,
+          "text": "After 10 consecutive failed sign-in attempts, the account is locked for 30 minutes. A successful password reset removes the lockout immediately. Repeated lockouts within 24 hours trigger a security review.",
+          "section": "Authentication and Password Reset > Failed sign-in lockout",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#overview-0",
+          "score": 0.1679,
+          "text": "Acme Markets accounts sign in with a registered email address and a password. Two-factor authentication (2FA) is strongly recommended and is mandatory for accounts with API access.",
+          "section": "Authentication and Password Reset",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#resetting-your-password-0",
+          "score": 0.1549,
+          "text": "- Select Forgot password on the sign-in page.\n- Enter the email address registered to the account.\n- Open the reset link sent to that email address and choose a new password.\nReset links are valid for 30 minutes and can be used only once. Requesting a new link invalidates any earlier link that has not been used yet.",
+          "section": "Authentication and Password Reset > Resetting your password",
+          "above_threshold": true
+        }
+      ],
+      "expected_sources": [
+        "authentication_password_reset.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q02",
+      "question": "What happens when a client exceeds the API rate limit?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#exceeding-the-limit-0",
+          "score": 0.3305,
+          "text": "When a client exceeds the rate limit, the API returns HTTP 429 Too Many Requests with a Retry-After header giving the number of seconds to wait. Clients should retry with exponential backoff, starting at 1 second and capped at 60 seconds. If a key receives more than 50 HTTP 429 responses within 10 minutes, the key is temporarily suspended for 15 minutes.",
+          "section": "API Rate Limits > Exceeding the limit",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#rate-limit-headers-0",
+          "score": 0.2278,
+          "text": "Every REST response includes three headers: X-RateLimit-Limit (the quota for the current window), X-RateLimit-Remaining (requests left in the window) and X-RateLimit-Reset (the Unix time in seconds when the window resets).",
+          "section": "API Rate Limits > Rate limit headers",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#requesting-a-higher-limit-0",
+          "score": 0.1753,
+          "text": "Pro and Institutional customers can request a higher limit from the developer portal. Requests must describe the use case and expected traffic, and are reviewed within 3 business days. Basic plan customers must upgrade their plan before requesting an increase.",
+          "section": "API Rate Limits > Requesting a higher limit",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#overview-0",
+          "score": 0.1584,
+          "text": "The Acme Markets REST and WebSocket APIs enforce rate limits per API key. Limits protect platform stability and are applied independently to each key, even when several keys belong to the same account.",
+          "section": "API Rate Limits",
+          "above_threshold": true
+        }
+      ],
+      "expected_sources": [
+        "api_rate_limits.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q03",
+      "question": "Which documents are accepted as proof of address?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#accepted-documents-0",
+          "score": 0.3653,
+          "text": "Proof of identity: a valid passport, national identity card, or driving licence. The document must not be expired, must be in colour, and all four corners must be visible.\nProof of address: a utility bill, bank statement, or government-issued letter showing the customer's full name and residential address, dated within the last 6 months. Mobile phone bills and screenshots are not accepted as proof of address.",
+          "section": "Identity Verification (KYC) > Accepted documents",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#submitting-documents-0",
+          "score": 0.0971,
+          "text": "Customers upload documents from Settings > Verification in the web or mobile app. The upload also asks for a selfie with a liveness check, which is compared against the photo on the identity document. Accepted file formats are JPG, PNG and PDF, up to 10 MB per file.",
+          "section": "Identity Verification (KYC) > Submitting documents",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#lost-access-to-the-registered-email-0",
+          "score": 0.051,
+          "text": "If a customer can no longer access the registered email address, the password cannot be reset through the self-service flow. The customer must contact support, complete identity verification, and then support updates the email address before a new reset link is issued.",
+          "section": "Authentication and Password Reset > Lost access to the registered email",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#resetting-your-password-0",
+          "score": 0.0473,
+          "text": "- Select Forgot password on the sign-in page.\n- Enter the email address registered to the account.\n- Open the reset link sent to that email address and choose a new password.\nReset links are valid for 30 minutes and can be used only once. Requesting a new link invalidates any earlier link that has not been used yet.",
+          "section": "Authentication and Password Reset > Resetting your password",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "identity_verification.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q04",
+      "question": "How long do bank transfer withdrawals take to arrive?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#processing-times-0",
+          "score": 0.2825,
+          "text": "Method: Bank transfer; Internal processing: 1 business day; Typical arrival: 3-5 business days.\nMethod: Card; Internal processing: 1 business day; Typical arrival: Up to 10 business days.\nMethod: E-wallet; Internal processing: Same business day; Typical arrival: Within 24 hours.",
+          "section": "Payments and Withdrawals > Processing times",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#withdrawal-rules-0",
+          "score": 0.1918,
+          "text": "Withdrawals are available only after identity verification is complete. Funds are returned to the method used for the original deposit, up to the deposited amount; any profit above that amount is paid by bank transfer. The minimum withdrawal amount is 10 USD. Verified accounts can withdraw up to 50,000 USD per day.",
+          "section": "Payments and Withdrawals > Withdrawal rules",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#supported-payment-methods-0",
+          "score": 0.189,
+          "text": "Customers can deposit and withdraw using bank transfer (SEPA and SWIFT), debit or credit card (Visa and Mastercard), and e-wallets (Skrill and Neteller). Third-party payments are not accepted: the payment method must be in the account holder's own name.",
+          "section": "Payments and Withdrawals > Supported payment methods",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#pending-and-failed-withdrawals-0",
+          "score": 0.0992,
+          "text": "A withdrawal can be cancelled while its status is Pending. Once the status changes to Processing, it can no longer be cancelled. If a withdrawal fails, for example because the bank rejects it, the funds are returned to the account balance within 2 business days and the customer is notified by email.",
+          "section": "Payments and Withdrawals > Pending and failed withdrawals",
+          "above_threshold": true
+        }
+      ],
+      "expected_sources": [
+        "payments_withdrawals.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q05",
+      "question": "Who is a SEV1 incident escalated to if it is not resolved within 30 minutes?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#escalation-path-0",
+          "score": 0.3978,
+          "text": "If a SEV1 incident is not resolved within 30 minutes, the on-call engineer escalates it to the Engineering Manager. If it is still not resolved after 1 hour, the Head of Engineering is notified and an incident commander is appointed. SEV2 incidents are escalated to the Engineering Manager after 4 hours without resolution.",
+          "section": "Incident Escalation > Escalation path",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#customer-communication-0",
+          "score": 0.1838,
+          "text": "During a SEV1 incident the public status page is updated every 30 minutes. During a SEV2 incident it is updated every 2 hours. Agents must use the approved status page wording and must not give customers an estimated fix time unless the incident commander has confirmed it.",
+          "section": "Incident Escalation > Customer communication",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#failed-sign-in-lockout-0",
+          "score": 0.0938,
+          "text": "After 10 consecutive failed sign-in attempts, the account is locked for 30 minutes. A successful password reset removes the lockout immediately. Repeated lockouts within 24 hours trigger a security review.",
+          "section": "Authentication and Password Reset > Failed sign-in lockout",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#post-incident-review-0",
+          "score": 0.0929,
+          "text": "A blameless post-incident review is written within 5 business days for every SEV1 and SEV2 incident. The review records the timeline, root cause, customer impact, and follow-up actions with owners.",
+          "section": "Incident Escalation > Post-incident review",
+          "above_threshold": true
+        }
+      ],
+      "expected_sources": [
+        "incident_escalation.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q06",
+      "question": "How long does identity verification review usually take?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#review-times-0",
+          "score": 0.3876,
+          "text": "Most verification submissions are reviewed within 24 hours. During peak periods the review can take up to 3 business days. Customers receive an email when the review is complete, whether it is approved or rejected.",
+          "section": "Identity Verification (KYC) > Review times",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#overview-0",
+          "score": 0.243,
+          "text": "Acme Markets is required by anti-money-laundering (AML) regulations to verify the identity of every customer. Verification must be completed before the first withdrawal, or once cumulative deposits exceed 2,000 USD, whichever happens first.",
+          "section": "Identity Verification (KYC)",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#rejected-submissions-0",
+          "score": 0.2384,
+          "text": "Common reasons for rejection are blurry or cropped images, expired documents, and a name that does not match the account. Customers may resubmit after a rejection. After 3 rejected submissions, the case is escalated to the compliance team for manual review and the customer is contacted within 2 business days.",
+          "section": "Identity Verification (KYC) > Rejected submissions",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#data-retention-0",
+          "score": 0.2376,
+          "text": "Verification documents are stored encrypted and are retained for 5 years after the account is closed, as required by AML record-keeping rules. Customers cannot request early deletion of verification records.",
+          "section": "Identity Verification (KYC) > Data retention",
+          "above_threshold": true
+        }
+      ],
+      "expected_sources": [
+        "identity_verification.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q07",
+      "question": "Can I submit a mobile phone bill as proof of address?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#accepted-documents-0",
+          "score": 0.3296,
+          "text": "Proof of identity: a valid passport, national identity card, or driving licence. The document must not be expired, must be in colour, and all four corners must be visible.\nProof of address: a utility bill, bank statement, or government-issued letter showing the customer's full name and residential address, dated within the last 6 months. Mobile phone bills and screenshots are not accepted as proof of address.",
+          "section": "Identity Verification (KYC) > Accepted documents",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#submitting-documents-0",
+          "score": 0.1712,
+          "text": "Customers upload documents from Settings > Verification in the web or mobile app. The upload also asks for a selfie with a liveness check, which is compared against the photo on the identity document. Accepted file formats are JPG, PNG and PDF, up to 10 MB per file.",
+          "section": "Identity Verification (KYC) > Submitting documents",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#rejected-submissions-0",
+          "score": 0.0548,
+          "text": "Common reasons for rejection are blurry or cropped images, expired documents, and a name that does not match the account. Customers may resubmit after a rejection. After 3 rejected submissions, the case is escalated to the compliance team for manual review and the customer is contacted within 2 business days.",
+          "section": "Identity Verification (KYC) > Rejected submissions",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#review-times-0",
+          "score": 0.0398,
+          "text": "Most verification submissions are reviewed within 24 hours. During peak periods the review can take up to 3 business days. Customers receive an email when the review is complete, whether it is approved or rejected.",
+          "section": "Identity Verification (KYC) > Review times",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "identity_verification.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q08",
+      "question": "Is two-factor authentication optional for API accounts?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#overview-0",
+          "score": 0.4349,
+          "text": "Acme Markets accounts sign in with a registered email address and a password. Two-factor authentication (2FA) is strongly recommended and is mandatory for accounts with API access.",
+          "section": "Authentication and Password Reset",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#two-factor-authentication-0",
+          "score": 0.1869,
+          "text": "Supported 2FA methods are authenticator apps (TOTP) and SMS one-time codes. SMS is offered only as a fallback when an authenticator app is unavailable. When 2FA is enabled, customers receive 10 single-use backup codes. Changing the password signs out all other active sessions but does not disable 2FA.",
+          "section": "Authentication and Password Reset > Two-factor authentication",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#overview-0",
+          "score": 0.0543,
+          "text": "This guide covers deposit methods, withdrawal rules, processing times, and fees for Acme Markets accounts.",
+          "section": "Payments and Withdrawals",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#overview-0",
+          "score": 0.0493,
+          "text": "The Acme Markets REST and WebSocket APIs enforce rate limits per API key. Limits protect platform stability and are applied independently to each key, even when several keys belong to the same account.",
+          "section": "API Rate Limits",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "authentication_password_reset.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q09",
+      "question": "Is my second withdrawal in a month free?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#fees-0",
+          "score": 0.4777,
+          "text": "Deposits are free. The first withdrawal in each calendar month is free; each additional withdrawal in the same month costs 2.50 USD. SWIFT transfers may also incur intermediary bank charges that Acme Markets does not control.",
+          "section": "Payments and Withdrawals > Fees",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#overview-0",
+          "score": 0.0903,
+          "text": "This guide covers deposit methods, withdrawal rules, processing times, and fees for Acme Markets accounts.",
+          "section": "Payments and Withdrawals",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#pending-and-failed-withdrawals-0",
+          "score": 0.0392,
+          "text": "A withdrawal can be cancelled while its status is Pending. Once the status changes to Processing, it can no longer be cancelled. If a withdrawal fails, for example because the bank rejects it, the funds are returned to the account balance within 2 business days and the customer is notified by email.",
+          "section": "Payments and Withdrawals > Pending and failed withdrawals",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#withdrawal-rules-0",
+          "score": 0.0373,
+          "text": "Withdrawals are available only after identity verification is complete. Funds are returned to the method used for the original deposit, up to the deposited amount; any profit above that amount is paid by bank transfer. The minimum withdrawal amount is 10 USD. Verified accounts can withdraw up to 50,000 USD per day.",
+          "section": "Payments and Withdrawals > Withdrawal rules",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "payments_withdrawals.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q10",
+      "question": "How long are verification documents kept after an account is closed?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#data-retention-0",
+          "score": 0.3936,
+          "text": "Verification documents are stored encrypted and are retained for 5 years after the account is closed, as required by AML record-keeping rules. Customers cannot request early deletion of verification records.",
+          "section": "Identity Verification (KYC) > Data retention",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#submitting-documents-0",
+          "score": 0.0897,
+          "text": "Customers upload documents from Settings > Verification in the web or mobile app. The upload also asks for a selfie with a liveness check, which is compared against the photo on the identity document. Accepted file formats are JPG, PNG and PDF, up to 10 MB per file.",
+          "section": "Identity Verification (KYC) > Submitting documents",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#rejected-submissions-0",
+          "score": 0.0761,
+          "text": "Common reasons for rejection are blurry or cropped images, expired documents, and a name that does not match the account. Customers may resubmit after a rejection. After 3 rejected submissions, the case is escalated to the compliance team for manual review and the customer is contacted within 2 business days.",
+          "section": "Identity Verification (KYC) > Rejected submissions",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#accepted-documents-0",
+          "score": 0.0504,
+          "text": "Proof of identity: a valid passport, national identity card, or driving licence. The document must not be expired, must be in colour, and all four corners must be visible.\nProof of address: a utility bill, bank statement, or government-issued letter showing the customer's full name and residential address, dated within the last 6 months. Mobile phone bills and screenshots are not accepted as proof of address.",
+          "section": "Identity Verification (KYC) > Accepted documents",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "identity_verification.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q11",
+      "question": "How often is the status page updated during a SEV2 incident?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#customer-communication-0",
+          "score": 0.4839,
+          "text": "During a SEV1 incident the public status page is updated every 30 minutes. During a SEV2 incident it is updated every 2 hours. Agents must use the approved status page wording and must not give customers an estimated fix time unless the incident commander has confirmed it.",
+          "section": "Incident Escalation > Customer communication",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#post-incident-review-0",
+          "score": 0.132,
+          "text": "A blameless post-incident review is written within 5 business days for every SEV1 and SEV2 incident. The review records the timeline, root cause, customer impact, and follow-up actions with owners.",
+          "section": "Incident Escalation > Post-incident review",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#how-to-escalate-0",
+          "score": 0.081,
+          "text": "Support agents open an incident in the incident tracker, assign a severity, and attach customer reports. For SEV1 and SEV2 incidents the agent also pages the on-call engineer through the paging system. SEV3 incidents are handled during business hours by the owning team.",
+          "section": "Incident Escalation > How to escalate",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#escalation-path-0",
+          "score": 0.0736,
+          "text": "If a SEV1 incident is not resolved within 30 minutes, the on-call engineer escalates it to the Engineering Manager. If it is still not resolved after 1 hour, the Head of Engineering is notified and an incident commander is appointed. SEV2 incidents are escalated to the Engineering Manager after 4 hours without resolution.",
+          "section": "Incident Escalation > Escalation path",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "incident_escalation.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q12",
+      "question": "What is the API rate limit for the Enterprise plan?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#requesting-a-higher-limit-0",
+          "score": 0.3096,
+          "text": "Pro and Institutional customers can request a higher limit from the developer portal. Requests must describe the use case and expected traffic, and are reviewed within 3 business days. Basic plan customers must upgrade their plan before requesting an increase.",
+          "section": "API Rate Limits > Requesting a higher limit",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#rate-limit-headers-0",
+          "score": 0.2967,
+          "text": "Every REST response includes three headers: X-RateLimit-Limit (the quota for the current window), X-RateLimit-Remaining (requests left in the window) and X-RateLimit-Reset (the Unix time in seconds when the window resets).",
+          "section": "API Rate Limits > Rate limit headers",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#exceeding-the-limit-0",
+          "score": 0.2542,
+          "text": "When a client exceeds the rate limit, the API returns HTTP 429 Too Many Requests with a Retry-After header giving the number of seconds to wait. Clients should retry with exponential backoff, starting at 1 second and capped at 60 seconds. If a key receives more than 50 HTTP 429 responses within 10 minutes, the key is temporarily suspended for 15 minutes.",
+          "section": "API Rate Limits > Exceeding the limit",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#limits-by-plan-0",
+          "score": 0.2248,
+          "text": "Plan: Basic; Requests per minute: 60; Requests per day: 10,000; Concurrent WebSocket connections: 2.\nPlan: Pro; Requests per minute: 300; Requests per day: 100,000; Concurrent WebSocket connections: 10.\nPlan: Institutional; Requests per minute: 1,200; Requests per day: 1,000,000; Concurrent WebSocket connections: 50.",
+          "section": "API Rate Limits > Limits by plan",
+          "above_threshold": true
+        }
+      ],
+      "expected_sources": [
+        "api_rate_limits.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q13",
+      "question": "Can I withdraw funds to a cryptocurrency wallet, and what network fees apply?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#withdrawal-rules-0",
+          "score": 0.099,
+          "text": "Withdrawals are available only after identity verification is complete. Funds are returned to the method used for the original deposit, up to the deposited amount; any profit above that amount is paid by bank transfer. The minimum withdrawal amount is 10 USD. Verified accounts can withdraw up to 50,000 USD per day.",
+          "section": "Payments and Withdrawals > Withdrawal rules",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#overview-0",
+          "score": 0.0787,
+          "text": "This guide covers deposit methods, withdrawal rules, processing times, and fees for Acme Markets accounts.",
+          "section": "Payments and Withdrawals",
+          "above_threshold": false
+        },
+        {
+          "rank": 3,
+          "doc_id": "api_rate_limits.md",
+          "chunk_id": "api_rate_limits#endpoint-specific-limits-0",
+          "score": 0.0555,
+          "text": "The order placement endpoint (POST /v1/orders) is limited to 20 requests per second per key on every plan. The token endpoint (POST /v1/auth/token) is limited to 10 requests per minute per IP address. These limits apply in addition to the plan limits above.",
+          "section": "API Rate Limits > Endpoint-specific limits",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#fees-0",
+          "score": 0.0551,
+          "text": "Deposits are free. The first withdrawal in each calendar month is free; each additional withdrawal in the same month costs 2.50 USD. SWIFT transfers may also incur intermediary bank charges that Acme Markets does not control.",
+          "section": "Payments and Withdrawals > Fees",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "payments_withdrawals.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q14",
+      "question": "What compensation do customers receive after a SEV1 outage?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#review-times-0",
+          "score": 0.162,
+          "text": "Most verification submissions are reviewed within 24 hours. During peak periods the review can take up to 3 business days. Customers receive an email when the review is complete, whether it is approved or rejected.",
+          "section": "Identity Verification (KYC) > Review times",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#two-factor-authentication-0",
+          "score": 0.1222,
+          "text": "Supported 2FA methods are authenticator apps (TOTP) and SMS one-time codes. SMS is offered only as a fallback when an authenticator app is unavailable. When 2FA is enabled, customers receive 10 single-use backup codes. Changing the password signs out all other active sessions but does not disable 2FA.",
+          "section": "Authentication and Password Reset > Two-factor authentication",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#severity-levels-0",
+          "score": 0.0894,
+          "text": "Severity: SEV1; Definition: Complete outage or security breach affecting many customers; Example: Trading platform unavailable; Initial response target: 15 minutes.\nSeverity: SEV2; Definition: Major feature degraded with no workaround; Example: Withdrawals delayed by more than 4 hours; Initial response target: 1 hour.\nSeverity: SEV3; Definition: Minor issue with a workaround; Example: A single report renders incorrectly; Initial response target: 1 business day.",
+          "section": "Incident Escalation > Severity levels",
+          "above_threshold": true
+        },
+        {
+          "rank": 4,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#customer-communication-0",
+          "score": 0.053,
+          "text": "During a SEV1 incident the public status page is updated every 30 minutes. During a SEV2 incident it is updated every 2 hours. Agents must use the approved status page wording and must not give customers an estimated fix time unless the incident commander has confirmed it.",
+          "section": "Incident Escalation > Customer communication",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "incident_escalation.md"
+      ],
+      "expected_source_hit": true
+    },
+    {
+      "question_id": "q15",
+      "question": "What are the opening hours of the London office?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#how-to-escalate-0",
+          "score": 0.1517,
+          "text": "Support agents open an incident in the incident tracker, assign a severity, and attach customer reports. For SEV1 and SEV2 incidents the agent also pages the on-call engineer through the paging system. SEV3 incidents are handled during business hours by the owning team.",
+          "section": "Incident Escalation > How to escalate",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#resetting-your-password-0",
+          "score": 0.0876,
+          "text": "- Select Forgot password on the sign-in page.\n- Enter the email address registered to the account.\n- Open the reset link sent to that email address and choose a new password.\nReset links are valid for 30 minutes and can be used only once. Requesting a new link invalidates any earlier link that has not been used yet.",
+          "section": "Authentication and Password Reset > Resetting your password",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "identity_verification.md",
+          "chunk_id": "identity_verification#review-times-0",
+          "score": 0.0575,
+          "text": "Most verification submissions are reviewed within 24 hours. During peak periods the review can take up to 3 business days. Customers receive an email when the review is complete, whether it is approved or rejected.",
+          "section": "Identity Verification (KYC) > Review times",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "authentication_password_reset.md",
+          "chunk_id": "authentication_password_reset#failed-sign-in-lockout-0",
+          "score": 0.0508,
+          "text": "After 10 consecutive failed sign-in attempts, the account is locked for 30 minutes. A successful password reset removes the lockout immediately. Repeated lockouts within 24 hours trigger a security review.",
+          "section": "Authentication and Password Reset > Failed sign-in lockout",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [],
+      "expected_source_hit": null
+    },
+    {
+      "question_id": "q16",
+      "question": "How often is the status page updated during a SEV3 incident?",
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#customer-communication-0",
+          "score": 0.4349,
+          "text": "During a SEV1 incident the public status page is updated every 30 minutes. During a SEV2 incident it is updated every 2 hours. Agents must use the approved status page wording and must not give customers an estimated fix time unless the incident commander has confirmed it.",
+          "section": "Incident Escalation > Customer communication",
+          "above_threshold": true
+        },
+        {
+          "rank": 2,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#how-to-escalate-0",
+          "score": 0.1013,
+          "text": "Support agents open an incident in the incident tracker, assign a severity, and attach customer reports. For SEV1 and SEV2 incidents the agent also pages the on-call engineer through the paging system. SEV3 incidents are handled during business hours by the owning team.",
+          "section": "Incident Escalation > How to escalate",
+          "above_threshold": true
+        },
+        {
+          "rank": 3,
+          "doc_id": "payments_withdrawals.md",
+          "chunk_id": "payments_withdrawals#pending-and-failed-withdrawals-0",
+          "score": 0.0766,
+          "text": "A withdrawal can be cancelled while its status is Pending. Once the status changes to Processing, it can no longer be cancelled. If a withdrawal fails, for example because the bank rejects it, the funds are returned to the account balance within 2 business days and the customer is notified by email.",
+          "section": "Payments and Withdrawals > Pending and failed withdrawals",
+          "above_threshold": false
+        },
+        {
+          "rank": 4,
+          "doc_id": "incident_escalation.md",
+          "chunk_id": "incident_escalation#overview-0",
+          "score": 0.0668,
+          "text": "This runbook describes how support agents classify and escalate production incidents.",
+          "section": "Incident Escalation",
+          "above_threshold": false
+        }
+      ],
+      "expected_sources": [
+        "incident_escalation.md"
+      ],
+      "expected_source_hit": true
+    }
+  ]
+}

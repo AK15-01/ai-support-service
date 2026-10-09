@@ -1,0 +1,1254 @@
+{
+  "summary": {
+    "questions": 16,
+    "validation_passed": 16,
+    "validation_failed": 0,
+    "answered": 11,
+    "refused": 5,
+    "check_failures": {},
+    "all_passed": true
+  },
+  "semantic_support": "not_verified",
+  "disclaimer": "Validation verifies answer format, citation provenance (cited chunk IDs exist and were retrieved for the question), explicit refusals, and lexical overlap between answer sentences and cited text. It does not verify that the cited text semantically supports or entails the answer.",
+  "evaluation": {
+    "labelled_questions": 16,
+    "behavior_accuracy": 1.0,
+    "behavior_mismatches": [],
+    "unrecognised_labels": [],
+    "retrieval_top1_hit_rate": 0.9333,
+    "retrieval_topk_hit_rate": 1.0,
+    "retrieval_misses": [],
+    "behavior": [
+      {
+        "question_id": "q01",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q02",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q03",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q04",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q05",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q06",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q07",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q08",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q09",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q10",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q11",
+        "label": "answerable",
+        "expected": "answer",
+        "actual": "answer",
+        "match": true
+      },
+      {
+        "question_id": "q12",
+        "label": "unanswerable",
+        "expected": "refuse",
+        "actual": "refuse",
+        "match": true
+      },
+      {
+        "question_id": "q13",
+        "label": "unanswerable",
+        "expected": "refuse",
+        "actual": "refuse",
+        "match": true
+      },
+      {
+        "question_id": "q14",
+        "label": "unanswerable",
+        "expected": "refuse",
+        "actual": "refuse",
+        "match": true
+      },
+      {
+        "question_id": "q15",
+        "label": "unanswerable",
+        "expected": "refuse",
+        "actual": "refuse",
+        "match": true
+      },
+      {
+        "question_id": "q16",
+        "label": "unanswerable",
+        "expected": "refuse",
+        "actual": "refuse",
+        "match": true
+      }
+    ],
+    "retrieval": [
+      {
+        "question_id": "q01",
+        "expected_sources": [
+          "authentication_password_reset.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q02",
+        "expected_sources": [
+          "api_rate_limits.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q03",
+        "expected_sources": [
+          "identity_verification.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q04",
+        "expected_sources": [
+          "payments_withdrawals.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q05",
+        "expected_sources": [
+          "incident_escalation.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q06",
+        "expected_sources": [
+          "identity_verification.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q07",
+        "expected_sources": [
+          "identity_verification.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q08",
+        "expected_sources": [
+          "authentication_password_reset.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q09",
+        "expected_sources": [
+          "payments_withdrawals.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q10",
+        "expected_sources": [
+          "identity_verification.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q11",
+        "expected_sources": [
+          "incident_escalation.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q12",
+        "expected_sources": [
+          "api_rate_limits.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q13",
+        "expected_sources": [
+          "payments_withdrawals.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q14",
+        "expected_sources": [
+          "incident_escalation.md"
+        ],
+        "top1_hit": false,
+        "topk_hit": true
+      },
+      {
+        "question_id": "q16",
+        "expected_sources": [
+          "incident_escalation.md"
+        ],
+        "top1_hit": true,
+        "topk_hit": true
+      }
+    ]
+  },
+  "per_question": [
+    {
+      "question_id": "q01",
+      "question": "How many password reset attempts are allowed per hour?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['authentication_password_reset.md'] derived_from_chunks=['authentication_password_reset.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['authentication_password_reset#password-reset-limits-0'] listed=['authentication_password_reset#password-reset-limits-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "Each account may make up to 5 password reset attempts per hour.",
+          "cited": [
+            "authentication_password_reset#password-reset-limits-0"
+          ],
+          "overlap": 1.0
+        },
+        {
+          "sentence": "Additional reset requests within the same hour are rejected with the message \"Too many reset attempts\", and the counter clears 60 minutes after the first attempt in the window.",
+          "cited": [
+            "authentication_password_reset#password-reset-limits-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q02",
+      "question": "What happens when a client exceeds the API rate limit?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['api_rate_limits.md'] derived_from_chunks=['api_rate_limits.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['api_rate_limits#exceeding-the-limit-0'] listed=['api_rate_limits#exceeding-the-limit-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "When a client exceeds the rate limit, the API returns HTTP 429 Too Many Requests with a Retry-After header giving the number of seconds to wait.",
+          "cited": [
+            "api_rate_limits#exceeding-the-limit-0"
+          ],
+          "overlap": 1.0
+        },
+        {
+          "sentence": "Clients should retry with exponential backoff, starting at 1 second and capped at 60 seconds.",
+          "cited": [
+            "api_rate_limits#exceeding-the-limit-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q03",
+      "question": "Which documents are accepted as proof of address?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['identity_verification.md'] derived_from_chunks=['identity_verification.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['identity_verification#accepted-documents-0'] listed=['identity_verification#accepted-documents-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "Proof of address: a utility bill, bank statement, or government-issued letter showing the customer's full name and residential address, dated within the last 6 months.",
+          "cited": [
+            "identity_verification#accepted-documents-0"
+          ],
+          "overlap": 1.0
+        },
+        {
+          "sentence": "Mobile phone bills and screenshots are not accepted as proof of address.",
+          "cited": [
+            "identity_verification#accepted-documents-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q04",
+      "question": "How long do bank transfer withdrawals take to arrive?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['payments_withdrawals.md'] derived_from_chunks=['payments_withdrawals.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['payments_withdrawals#processing-times-0'] listed=['payments_withdrawals#processing-times-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "Method: Bank transfer; Internal processing: 1 business day; Typical arrival: 3-5 business days.",
+          "cited": [
+            "payments_withdrawals#processing-times-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q05",
+      "question": "Who is a SEV1 incident escalated to if it is not resolved within 30 minutes?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['incident_escalation.md'] derived_from_chunks=['incident_escalation.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['incident_escalation#escalation-path-0'] listed=['incident_escalation#escalation-path-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "If a SEV1 incident is not resolved within 30 minutes, the on-call engineer escalates it to the Engineering Manager.",
+          "cited": [
+            "incident_escalation#escalation-path-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q06",
+      "question": "How long does identity verification review usually take?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['identity_verification.md'] derived_from_chunks=['identity_verification.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['identity_verification#review-times-0'] listed=['identity_verification#review-times-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "Most verification submissions are reviewed within 24 hours.",
+          "cited": [
+            "identity_verification#review-times-0"
+          ],
+          "overlap": 1.0
+        },
+        {
+          "sentence": "During peak periods the review can take up to 3 business days.",
+          "cited": [
+            "identity_verification#review-times-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q07",
+      "question": "Can I submit a mobile phone bill as proof of address?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['identity_verification.md'] derived_from_chunks=['identity_verification.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['identity_verification#accepted-documents-0'] listed=['identity_verification#accepted-documents-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "Mobile phone bills and screenshots are not accepted as proof of address.",
+          "cited": [
+            "identity_verification#accepted-documents-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q08",
+      "question": "Is two-factor authentication optional for API accounts?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['authentication_password_reset.md'] derived_from_chunks=['authentication_password_reset.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['authentication_password_reset#overview-0'] listed=['authentication_password_reset#overview-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "Two-factor authentication (2FA) is strongly recommended and is mandatory for accounts with API access.",
+          "cited": [
+            "authentication_password_reset#overview-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q09",
+      "question": "Is my second withdrawal in a month free?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['payments_withdrawals.md'] derived_from_chunks=['payments_withdrawals.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['payments_withdrawals#fees-0'] listed=['payments_withdrawals#fees-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "The first withdrawal in each calendar month is free; each additional withdrawal in the same month costs 2.50 USD.",
+          "cited": [
+            "payments_withdrawals#fees-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q10",
+      "question": "How long are verification documents kept after an account is closed?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['identity_verification.md'] derived_from_chunks=['identity_verification.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['identity_verification#data-retention-0'] listed=['identity_verification#data-retention-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "Verification documents are stored encrypted and are retained for 5 years after the account is closed, as required by AML record-keeping rules.",
+          "cited": [
+            "identity_verification#data-retention-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q11",
+      "question": "How often is the status page updated during a SEV2 incident?",
+      "supported": true,
+      "refusal_reason": null,
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "1 citation(s)"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=['incident_escalation.md'] derived_from_chunks=['incident_escalation.md']"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "inline=['incident_escalation#customer-communication-0'] listed=['incident_escalation#customer-communication-0']"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "supported answer is not phrased as a refusal"
+        },
+        {
+          "name": "lexical_grounding",
+          "passed": true,
+          "detail": "min sentence overlap 1.00 (threshold 0.6); heuristic, not entailment"
+        }
+      ],
+      "grounding": [
+        {
+          "sentence": "During a SEV2 incident it is updated every 2 hours.",
+          "cited": [
+            "incident_escalation#customer-communication-0"
+          ],
+          "overlap": 1.0
+        },
+        {
+          "sentence": "Agents must use the approved status page wording and must not give customers an estimated fix time unless the incident commander has confirmed it.",
+          "cited": [
+            "incident_escalation#customer-communication-0"
+          ],
+          "overlap": 1.0
+        }
+      ]
+    },
+    {
+      "question_id": "q12",
+      "question": "What is the API rate limit for the Enterprise plan?",
+      "supported": false,
+      "refusal_reason": "unknown_terms",
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "not required for a refusal"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=[] derived_from_chunks=[]"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "refusal contains no inline citations"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "refusal starts with the refusal prefix and cites nothing"
+        }
+      ],
+      "grounding": []
+    },
+    {
+      "question_id": "q13",
+      "question": "Can I withdraw funds to a cryptocurrency wallet, and what network fees apply?",
+      "supported": false,
+      "refusal_reason": "unknown_terms",
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "not required for a refusal"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=[] derived_from_chunks=[]"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "refusal contains no inline citations"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "refusal starts with the refusal prefix and cites nothing"
+        }
+      ],
+      "grounding": []
+    },
+    {
+      "question_id": "q14",
+      "question": "What compensation do customers receive after a SEV1 outage?",
+      "supported": false,
+      "refusal_reason": "unknown_terms",
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "not required for a refusal"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=[] derived_from_chunks=[]"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "refusal contains no inline citations"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "refusal starts with the refusal prefix and cites nothing"
+        }
+      ],
+      "grounding": []
+    },
+    {
+      "question_id": "q15",
+      "question": "What are the opening hours of the London office?",
+      "supported": false,
+      "refusal_reason": "unknown_terms",
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "not required for a refusal"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=[] derived_from_chunks=[]"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "refusal contains no inline citations"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "refusal starts with the refusal prefix and cites nothing"
+        }
+      ],
+      "grounding": []
+    },
+    {
+      "question_id": "q16",
+      "question": "How often is the status page updated during a SEV3 incident?",
+      "supported": false,
+      "refusal_reason": "insufficient_coverage",
+      "passed": true,
+      "checks": [
+        {
+          "name": "answer_nonempty",
+          "passed": true,
+          "detail": "answer text must not be blank"
+        },
+        {
+          "name": "supported_is_bool",
+          "passed": true,
+          "detail": "type=bool"
+        },
+        {
+          "name": "citations_present",
+          "passed": true,
+          "detail": "not required for a refusal"
+        },
+        {
+          "name": "citations_known",
+          "passed": true,
+          "detail": "all cited IDs exist"
+        },
+        {
+          "name": "citations_in_retrieved",
+          "passed": true,
+          "detail": "all cited IDs were retrieved for this question"
+        },
+        {
+          "name": "document_citations_consistent",
+          "passed": true,
+          "detail": "documents=[] derived_from_chunks=[]"
+        },
+        {
+          "name": "inline_citations_consistent",
+          "passed": true,
+          "detail": "refusal contains no inline citations"
+        },
+        {
+          "name": "refusal_marked",
+          "passed": true,
+          "detail": "refusal starts with the refusal prefix and cites nothing"
+        }
+      ],
+      "grounding": []
+    }
+  ],
+  "settings": {
+    "docs_dir": "docs",
+    "questions_path": "questions.json",
+    "output_dir": ".",
+    "max_chunk_words": 120,
+    "top_k": 4,
+    "min_retrieval_score": 0.08,
+    "max_context_chars": 6000,
+    "generator": "extractive",
+    "min_sentence_score": 0.35,
+    "min_coverage": 0.9,
+    "max_answer_sentences": 2,
+    "relative_sentence_cutoff": 0.6,
+    "lexicon_credit": 0.8,
+    "min_grounding_overlap": 0.6
+  }
+}

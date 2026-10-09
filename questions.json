@@ -1,0 +1,108 @@
+[
+  {
+    "question_id": "q01",
+    "question": "How many password reset attempts are allowed per hour?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["authentication_password_reset.md"]
+  },
+  {
+    "question_id": "q02",
+    "question": "What happens when a client exceeds the API rate limit?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["api_rate_limits.md"]
+  },
+  {
+    "question_id": "q03",
+    "question": "Which documents are accepted as proof of address?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["identity_verification.md"]
+  },
+  {
+    "question_id": "q04",
+    "question": "How long do bank transfer withdrawals take to arrive?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["payments_withdrawals.md"]
+  },
+  {
+    "question_id": "q05",
+    "question": "Who is a SEV1 incident escalated to if it is not resolved within 30 minutes?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["incident_escalation.md"]
+  },
+  {
+    "question_id": "q06",
+    "question": "How long does identity verification review usually take?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["identity_verification.md"]
+  },
+  {
+    "question_id": "q07",
+    "question": "Can I submit a mobile phone bill as proof of address?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["identity_verification.md"],
+    "note": "Paraphrase + negation: the docs say mobile phone bills are NOT accepted."
+  },
+  {
+    "question_id": "q08",
+    "question": "Is two-factor authentication optional for API accounts?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["authentication_password_reset.md"],
+    "note": "Paraphrase: the docs say 2FA is mandatory for accounts with API access."
+  },
+  {
+    "question_id": "q09",
+    "question": "Is my second withdrawal in a month free?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["payments_withdrawals.md"],
+    "note": "Paraphrase: the docs say each additional withdrawal in the same month costs 2.50 USD."
+  },
+  {
+    "question_id": "q10",
+    "question": "How long are verification documents kept after an account is closed?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["identity_verification.md"],
+    "note": "Paraphrase: kept vs retained."
+  },
+  {
+    "question_id": "q11",
+    "question": "How often is the status page updated during a SEV2 incident?",
+    "expected_behavior": "answerable",
+    "expected_sources": ["incident_escalation.md"],
+    "note": "Must not include the SEV1 cadence."
+  },
+  {
+    "question_id": "q12",
+    "question": "What is the API rate limit for the Enterprise plan?",
+    "expected_behavior": "unanswerable",
+    "expected_sources": ["api_rate_limits.md"],
+    "note": "Partially unsupported: rate limits are documented, but no Enterprise plan exists in the docs."
+  },
+  {
+    "question_id": "q13",
+    "question": "Can I withdraw funds to a cryptocurrency wallet, and what network fees apply?",
+    "expected_behavior": "unanswerable",
+    "expected_sources": ["payments_withdrawals.md"],
+    "note": "Partially unsupported: withdrawals and fees are documented, cryptocurrency withdrawals are not."
+  },
+  {
+    "question_id": "q14",
+    "question": "What compensation do customers receive after a SEV1 outage?",
+    "expected_behavior": "unanswerable",
+    "expected_sources": ["incident_escalation.md"],
+    "note": "Partially unsupported: SEV1 handling is documented, customer compensation is not."
+  },
+  {
+    "question_id": "q15",
+    "question": "What are the opening hours of the London office?",
+    "expected_behavior": "unanswerable",
+    "expected_sources": [],
+    "note": "Unsupported: no document covers offices or opening hours."
+  },
+  {
+    "question_id": "q16",
+    "question": "How often is the status page updated during a SEV3 incident?",
+    "expected_behavior": "unanswerable",
+    "expected_sources": ["incident_escalation.md"],
+    "note": "Identifier distinction: status page cadence is documented for SEV1 and SEV2 only."
+  }
+]
